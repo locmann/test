@@ -1,0 +1,25 @@
+table {
+	width: 50%; /* Ширина таблицы */
+    margin: auto; 
+}
+
+#truncate {
+	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* Число отображаемых строк */
+	-webkit-box-orient: vertical; /* Вертикальная ориентация */
+	overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+/*для анимации наведения на строку*/
+table tbody tr{
+    cursor: pointer;transition: all .25s ease-in-out;
+}
+table tbody tr:hover{background-color: #ddd;}
+
+#menu {
+    display: inline-block;
+    width: 450px;
+    font-size: 20px;
+    float: right; 
+}
